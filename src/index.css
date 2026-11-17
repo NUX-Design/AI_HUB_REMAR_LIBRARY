@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Thai", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #17252a;
+  --color-muted: #66777a;
+  --color-brand: #087e75;
+  --color-brand-dark: #075c56;
+  --color-canvas: #f4f7f5;
+
+  /* shadcn semantic tokens → map เข้ากับ brand tokens ของ repo */
+  --color-background: var(--color-canvas);
+  --color-foreground: var(--color-ink);
+  --color-primary: var(--color-brand);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #e3efec;
+  --color-secondary-foreground: var(--color-brand-dark);
+  --color-accent: #e3efec;
+  --color-accent-foreground: var(--color-brand-dark);
+  --color-destructive: #c0392b;
+  --color-border: rgb(6 78 59 / 0.15);
+  --color-input: rgb(6 78 59 / 0.15);
+  --color-ring: var(--color-brand);
+}
+
+:root {
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #b7e4dc;
+  color: #123b38;
+}
